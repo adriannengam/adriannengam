@@ -1,0 +1,29 @@
+header {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	padding-top: 30px;
+	font-weight: 100;
+	line-height: 0em;
+	font-size: 100px;
+}
+
+h2 {
+	font-weight: 300;
+	line-height: 0em;
+	font-size: 32px;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.images {
+	display: flex;
+	justify-content: center;
+}
