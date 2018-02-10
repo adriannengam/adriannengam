@@ -45,7 +45,7 @@ img {
 /* The Modal (background) */
 
 .modal {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

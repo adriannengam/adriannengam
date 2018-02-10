@@ -13,6 +13,14 @@ $( document ).ready(function() {
 	  });
 	  
 	});
+// open img 1 
+var modal1 = document.getElementById('img0Modal');
+var btn1 = document.getElementById("img1");
+
+btn1.onclick = function() {
+    modal.style.display = "flex";
+}
+
 
 // hover img 2
 	$(function(){
