@@ -5,6 +5,8 @@ header {
 	flex-direction: column;
 }
 
+
+
 h1 {
 	padding-top: 30px;
 	font-weight: 100;
@@ -26,6 +28,14 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center; 
+	transition: filter .3s ease-in-out, opacity .3s ease-in-out;
+	opacity: 1;
+}
+
+.imgBlur {
+	filter: blur(4px);
+	pointer-events: none;
+	opacity: .6
 }
 
 .column {
@@ -64,7 +74,51 @@ img {
     margin-top: 20px;
     height: 150px;
     width: 150px;
-    background-image: url(../img/imgThumb.png);
+    background-image: url(../img/img1thumb.png);
+}
+
+.modalThumb2 {
+    background-image: url(../img/img2thumb.png);
+}
+
+.modalThumb3 {
+    background-image: url(../img/img3thumb.png);
+}
+
+.modalThumb4 {
+    background-image: url(../img/img4thumb.png);
+}
+
+.modalThumb5 {
+    background-image: url(../img/img5thumb.png);
+}
+
+.modalThumb6 {
+    background-image: url(../img/img6thumb.png);
+}
+
+.modalThumb7 {
+    background-image: url(../img/img7thumb.png);
+}
+
+.modalThumb8 {
+    background-image: url(../img/img8thumb.png);
+}
+
+.modalThumb9 {
+    background-image: url(../img/img9thumb.png);
+}
+
+.modalThumb10 {
+    background-image: url(../img/img10thumb.png);
+}
+
+.modalThumb11 {
+    background-image: url(../img/img11thumb.png);
+
+}
+.modalThumb12 {
+    background-image: url(../img/img12thumb.png);
 }
 
 /* Modal Content (Text) */
@@ -99,14 +153,15 @@ p {
 	line-height: 1.3em;
 }
 /* Animation */
-.modal-content, .modalThumb, #caption { 
+.modal, .modal-content, #caption { 
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.4s;
 }
 
+
 @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
+    from {transform:scale(0) translate(-50%, -50%)} 
+    to {transform:scale(1) translate(-50%, -50%)}
 }
 
 /* Close */

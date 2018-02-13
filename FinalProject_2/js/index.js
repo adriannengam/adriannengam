@@ -14,11 +14,12 @@ $( document ).ready(function() {
 	  
 	});
 // open img 1 
-var modal1 = document.getElementById('img0Modal');
+var modal1 = document.getElementById('imgModal');
 var btn1 = document.getElementById("img1");
 
 btn1.onclick = function() {
-    modal.style.display = "flex";
+    modal1.style.display = "flex";
+    $('.images').addClass('imgBlur');
 }
 
 
@@ -34,6 +35,16 @@ btn1.onclick = function() {
 	  });
 	  
 	});
+// open img 2
+var modal2 = document.getElementById('img2Modal');
+var btn2 = document.getElementById("img2");
+
+btn2.onclick = function() {
+    modal2.style.display = "flex";
+    $('.images').addClass('imgBlur');
+    $('.modalThumb').addClass('modalThumb2');
+}
+
 
 // hover img 3
 	$(function(){
@@ -170,6 +181,7 @@ var modal = document.getElementsByClassName("modal")[0];
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
+  $('.images').removeClass('imgBlur');
 } 
 
 
